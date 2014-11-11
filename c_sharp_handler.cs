@@ -21,7 +21,7 @@ namespace InfoNeedle
             var payload = new Dictionary<string, object>() {
                 { "iat", timestamp },
                 { "jti", System.Guid.NewGuid().ToString() }
-                // { "name", currentUser.name },
+                // { "first_name", currentUser.firstName },
                 // { "email", currentUser.email }
             };
 

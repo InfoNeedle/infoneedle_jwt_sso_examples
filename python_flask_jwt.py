@@ -19,8 +19,8 @@ def sso_redirector():
 		"iat": int(time.time()),
 		"jti": str(uuid.uuid1()),
 		# populate these values from your data source
-		"name": '',
-		"email": ''
+		# "first_name": user.first_name,
+		# "email": user.email
 	}
 
 	jwt_string = jwt.encode(payload, app.config['SHARED_KEY'])

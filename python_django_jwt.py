@@ -13,8 +13,8 @@ def index(request):
   payload = {
     "iat": int(time.time()),
     "jti": str(uuid.uuid1()),
-    "name": request.user.get_full_name(),
-    "email": request.user.email
+    # "first_name": request.user.first_name,
+    # "email": request.user.email
   }
 
   venue_id  = "{my infoneedle venue_id}"

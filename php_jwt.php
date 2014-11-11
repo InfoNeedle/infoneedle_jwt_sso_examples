@@ -8,14 +8,14 @@ include_once "Authentication/JWT.php";
 // Log your user in.
 
 $key       = "{my infoneedle shared key}";
-$venue_id = "{my infoneedle venue_id}";
+$venue_id  = "{my infoneedle venue_id}";
 $now       = time();
 
 $token = array(
-  "jti"   => md5($now . rand()),
-  "iat"   => $now,
-  "name"  => $user->name,
-  "email" => $user->email
+  "jti"         => md5($now . rand()),
+  "iat"         => $now,
+  "first_name"  => $user->first_name,
+  "email"       => $user->email
 );
 
 $jwt = JWT::encode($token, $key);

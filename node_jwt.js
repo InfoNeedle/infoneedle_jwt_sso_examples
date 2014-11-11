@@ -14,7 +14,7 @@ http.createServer(function (request, response) {
   var payload = {
     iat: (new Date().getTime() / 1000),
     jti: uuid.v4()
-    // name: user.name(),
+    // first_name: user.first_name(),
     // email: user.email()
   };
 

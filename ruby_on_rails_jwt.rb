@@ -28,7 +28,7 @@ class InfoneedleSessionController < ApplicationController
     payload = JWT.encode({
       :iat   => iat, # Seconds since epoch, determine when this token is stale
       :jti   => jti, # Unique token id, helps prevent replay attacks
-      :name  => user.name,
+      :first_name  => user.first_name,
       :email => user.email,
     }, INFONEEDLE_SHARED_SECRET)
 

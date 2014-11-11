@@ -43,7 +43,7 @@ public class JWT extends HttpServlet {
     JWTClaimsSet jwtClaims = new JWTClaimsSet();
     jwtClaims.setIssueTime(new Date());
     jwtClaims.setJWTID(UUID.randomUUID().toString());
-    // jwtClaims.setCustomClaim("name", user.name);
+    // jwtClaims.setCustomClaim("first_name", user.firstName);
     // jwtClaims.setCustomClaim("email", user.email);
 
     // Create JWS header with HS256 algorithm
